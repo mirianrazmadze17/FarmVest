@@ -1,0 +1,17 @@
+%light-btn {
+height: 64px;
+width: 142px;
+border: 1px solid $black-color;
+border-radius: 10px;
+padding: 13px, 25px, 13px, 25px;
+color:$black-color;
+background: $white-color;
+}
+%main-btn {
+background: $darkgreen-color;
+height: 64px;
+width: 142px;
+border-radius: 10px;
+padding: 13px, 25px, 13px, 25px;
+}
+
