@@ -4,27 +4,14 @@
 .container {
     width:1024px;
     margin:auto;
-    margin-left:280px;
-}
-.section-container {
-    width:1000px;
-    margin:  auto;
-    margin-left:270px;
-}
-.cont {
-    width:1000px;
-    margin: 0 auto;
-    margin-left:187px;
-}
-.conte {
-    width:1000px;
-    margin: 0 auto;
-    margin-left:120px;
 }
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+body {
+    display: grid;
 }
 nav {
     padding-inline:150px;
@@ -159,8 +146,7 @@ nav {
 .farm-vest {
     width:574px;
     height:144px;
-     margin:203px 0 250 0px;
-     padding-top:203px;
+     margin:93px auto;
     h1 {
         Font-family:"Lato";
         font-size:64px;
@@ -222,22 +208,21 @@ nav {
 .main-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 70px;
+    margin:auto auto 70px auto;
 }
 .right-side {
     img {
-        padding-top:420px;
+        padding-top:100px;
         width: 610px;
     }
 };
 .section2 {
-    margin-top: 303px;
+    margin:203px 54% auto auto;
     width: 570px;
     height: 234px;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2,1fr);
-    
     h1 {
         font-family: 'League Spartan';
         font-style: normal;
@@ -289,7 +274,8 @@ nav {
 
 }
 .choose {
-    margin-top:590px;
+    margin:620px auto;
+    margin-bottom: 250px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
@@ -364,8 +350,8 @@ nav {
     margin-bottom: 48px;
 }
 .customers  {
-    margin-top: 48px;
-    margin-bottom: 90px;
+    margin:70px auto;
+    margin-bottom: 0px;
     .customers__h1 {
         font-family: 'League Spartan';
         font-style: normal;
@@ -375,7 +361,7 @@ nav {
         height: 78px;
         width: 1224px;
         text-align: center;
-        margin-bottom: 32px;
+        margin:auto auto 32px auto;
     }
     .customers__p {
         font-family: 'League Spartan';
@@ -386,6 +372,7 @@ nav {
         height: 64px;
         width: 1224px;
       text-align: center;
+      margin:auto;
 
     }
     .customer-span {
@@ -396,6 +383,7 @@ nav {
         grid-template-columns: repeat(2,1fr);
         gap: 20px;
           place-items: center;
+          margin:0 0 120px 70px;
         .card__div {
             background:$lightgreen-color;
             display:flex;
@@ -445,19 +433,19 @@ nav {
     letter-spacing: 0em;
    text-align: center;
    width: 221px;
-   margin-top:90px;
-    margin-left:580px;
+   display: block;
+     margin: auto;
 };
 .frame {
     background: rgba(0, 128, 0, 0.05);
     border-radius: 20px;
     height: 470px;
-    width: 1306px;
+    width: 100%;
     border-radius: 20px;
-   margin-top: 200px;
+   margin:200px auto;
    .app-store {
     padding-top:147px;
-    padding-left: 470px;
+    padding-left: 570px;
     margin-right:30px;
     cursor: pointer;
    }
@@ -488,11 +476,13 @@ footer {
 }
 .footer {
   display: grid;
+  margin: auto;
   grid-template-columns: repeat(4,1fr);
   place-items: center;
   gap:20px;
     .footer__farm {
         padding-top: 68px;
+        padding-left:100px;
         p {
             font-family: 'Spartan';
             font-style: normal;
@@ -587,12 +577,12 @@ footer {
     display: flex;
     justify-content: space-between;
     width:1340px;
-     margin-top:58px;
+     margin:58px auto;
     span {
         margin-left:20px;
     }
    }
 hr {
-    width: 1350px;
+    width: 100%;
     margin-top: 120px;
 }
