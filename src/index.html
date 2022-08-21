@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>val-do-challenge</title>
     <link rel="stylesheet" href="../src/styles/style.css">
+    <script src="./script/app.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="nav">
         <span class="website-name">FarmVest</span>
         <ul class="nav-ul">
-            <li>Home</li>
-            <li>About</li>
-            <li>Features</li>
-            <li>How it works</li>
+            <li class="home-btn"><a href="#" style="text-decoration:none ; color:inherit">Home </a></li>
+            <li class="about-btn">About</li>
+            <li class="features-btn">Features</li>
+            <li class="how-btn">How it works</li>
         </ul>
         <div class="buttons">
             <a href="#" class="btn btn-light">Sign In</a>
@@ -37,7 +38,7 @@
         <img src="./images/forbes.svg" alt="">
         <img src="./images/business.svg" alt="">
         <img src="./images/fidelity.svg" alt="">
-        <img src="./images/WIRED.svg" alt="">
+        <img src="./images/WIRED.svg" alt="" class="wired">
     </div>
   </header>
   
@@ -92,9 +93,18 @@
     <div>
     <h1>Your <span>pathway</span> <br>to Future Investment</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu, mollis aenean sit dictum tincidunt. Ut arcu, suscipit ac etLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur </p>
-    <a href="#">What is FarmVest? <img src="./images/ancor down.svg" alt="" class="ancor"></a>
-    <a href="#">How safe is FarmVest <img src="./images/ancor down.svg" alt="" class="ancor"></a>
-    <a href="#">What do I gain from using FarmVest? <img src="./images/ancor down.svg" alt="" class="ancor"></a>
+    <a  class="expand">What is FarmVest? <img src="./images/ancor down.svg" alt="" class="ancor">
+    </a>
+    <p class="expand__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, ea.</p>
+
+    <a class="expand">How safe is FarmVest <img src="./images/ancor down.svg" alt="" class="ancor">
+    </a>
+    <p class="expand__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus voluptates soluta quod doloremque aspernatur corporis laborum enim earum hic.</p>
+
+    <a class="expand">What do I gain from using FarmVest? <img src="./images/ancor down.svg" alt="" class="ancor">
+    </a>
+    <p class="expand__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur illo atque, magnam asperiores optio aut deserunt odit. Dolorem neque odit expedita a obcaecati dolores quisquam nemo quam ullam earum?</p>
+
 </div>
 </div>
 
@@ -184,6 +194,8 @@
             </div>
              </div>
     </footer>
+</div>
+</div>
 </div>
 </div>
 </body>

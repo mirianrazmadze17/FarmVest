@@ -18,7 +18,7 @@ nav .buttons .btn-main, .input-text a, .choose .choose__btn, .view-all, .footer 
   padding: 13px, 25px, 13px, 25px; }
 
 .container {
-  width: 1024px;
+  max-width: 1024px;
   margin: auto; }
 
 * {
@@ -26,8 +26,21 @@ nav .buttons .btn-main, .input-text a, .choose .choose__btn, .view-all, .footer 
   padding: 0;
   box-sizing: border-box; }
 
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 20px; }
+  ::-webkit-scrollbar-track {
+    background: #263238; }
+  ::-webkit-scrollbar-thumb {
+    background: #008000; }
+    ::-webkit-scrollbar-thumb:hover {
+      width: 30px; }
+
 body {
   display: grid; }
+
+html {
+  scroll-behavior: smooth; }
 
 nav {
   padding-inline: 150px;
@@ -36,6 +49,12 @@ nav {
   padding-top: 60px;
   align-items: center;
   cursor: pointer; }
+  nav.fixed {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding-bottom: 70px;
+    color: black; }
   nav ul {
     margin-left: 45px; }
   nav span {
@@ -130,7 +149,6 @@ nav {
   grid-template-columns: repeat(5, 1fr);
   gap: 50px;
   margin: auto;
-  margin-right: 200px;
   place-items: center;
   padding-top: 209px; }
   .grid-items img {
@@ -200,7 +218,7 @@ nav {
   width: 610px; }
 
 .section2 {
-  margin: 203px 54% auto auto;
+  margin: 203px 850px auto auto;
   width: 570px;
   height: 234px;
   display: grid;
@@ -244,20 +262,25 @@ nav {
     margin-bottom: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
     .section2 a .ancor {
       height: 7px;
       width: 15px; }
+  .section2 .expand__p {
+    display: none; }
+    .section2 .expand__p.active {
+      display: flex; }
 
 .choose {
-  margin: 620px auto;
+  margin: 920px auto;
   margin-bottom: 250px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center; }
   .choose .choose__img img {
-    width: 580px;
-    height: 712px; }
+    max-width: 580px;
+    height: 612px; }
   .choose .choose__ul {
     list-style: none;
     margin-left: 0; }
@@ -315,8 +338,7 @@ nav {
   margin-bottom: 48px; }
 
 .customers {
-  margin: 70px auto;
-  margin-bottom: 0px; }
+  margin: 70px auto; }
   .customers .customers__h1 {
     font-family: 'League Spartan';
     font-style: normal;
@@ -431,7 +453,7 @@ footer {
   gap: 20px; }
   .footer .footer__farm {
     padding-top: 68px;
-    padding-left: 100px; }
+    padding-left: 40px; }
     .footer .footer__farm p {
       font-family: 'Spartan';
       font-style: normal;

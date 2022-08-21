@@ -2,7 +2,7 @@
 @import "./buttons.scss";
 @import "./fonts.scss";
 .container {
-    width:1024px;
+    max-width:1024px;
     margin:auto;
 }
 * {
@@ -10,8 +10,24 @@
     padding:0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+    width:20px;
+    border-radius: 20px;
+    &-track {
+        background: $black-color;
+    }
+    &-thumb {
+        background: $darkgreen-color;
+     &:hover {
+        width: 30px;
+     }
+    }
+}
 body {
     display: grid;
+}
+html {
+    scroll-behavior: smooth;
 }
 nav {
     padding-inline:150px;
@@ -20,6 +36,13 @@ nav {
     padding-top:60px;
     align-items: center;
     cursor: pointer;
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        background: $nav-fixed-color;
+        padding-bottom: 70px;
+        color:black;
+    }
     ul {
         margin-left:45px;
     }
@@ -134,7 +157,6 @@ nav {
     grid-template-columns: repeat(5, 1fr);
     gap:50px;
     margin:auto;
-    margin-right:200px;
     place-items: center;
     padding-top:209px;
     img {
@@ -217,7 +239,7 @@ nav {
     }
 };
 .section2 {
-    margin:203px 54% auto auto;
+    margin:203px 850px auto auto;
     width: 570px;
     height: 234px;
     display: grid;
@@ -265,24 +287,30 @@ nav {
         margin-bottom: 24px;
         display: flex;
         justify-content: space-between;
-        align-items: center;         
+        align-items: center;      
+        cursor: pointer;   
         .ancor {
             height: 7px;
             width: 15px;
         }
     }
-
+.expand__p {
+    display:none;
+    &.active {
+        display: flex;
+    }
+}
 }
 .choose {
-    margin:620px auto;
+    margin:920px auto;
     margin-bottom: 250px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     place-items: center;
     .choose__img {
         img {
-            width:580px;
-        height:712px;
+            max-width:580px;
+        height:612px;
         }
         
     }
@@ -351,7 +379,6 @@ nav {
 }
 .customers  {
     margin:70px auto;
-    margin-bottom: 0px;
     .customers__h1 {
         font-family: 'League Spartan';
         font-style: normal;
@@ -482,7 +509,7 @@ footer {
   gap:20px;
     .footer__farm {
         padding-top: 68px;
-        padding-left:100px;
+        padding-left:40px;
         p {
             font-family: 'Spartan';
             font-style: normal;
