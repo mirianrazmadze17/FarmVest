@@ -27,7 +27,7 @@ feature.addEventListener("click",()=> {
     window.scrollTo(4300,4400)
 });
 how.addEventListener("click", ()=> {
-    window.scrollTo(900,1000)
+    window.scrollTo(900,1000);
 } )
 window.addEventListener("scroll", () => {
     console.log(window.scrollY);
